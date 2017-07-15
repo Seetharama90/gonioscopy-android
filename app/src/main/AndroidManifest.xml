@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.example.gonioscopy">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/gonio_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/gonio_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".UserAreaActivity" />
+        <activity android:name=".LeftEyeCamera" />
+        <activity android:name=".RightEyeCamera" />
+        <activity android:name=".technicianLogin" />
+        <activity android:name=".OtpVerification" />
+        <activity android:name=".AfterLeftEye" />
+        <activity android:name=".AfterRightEye" />
+        <activity android:name=".ImageUpload"></activity>
+    </application>
+
+</manifest>
